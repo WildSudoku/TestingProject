@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestPasswordCrackerCentralized
+namespace TestPasswordCrackerCentralized.Workers
 {
     [TestClass]
-    public class UnitTest1
+    public class Comparator
     {
         [TestMethod]
         public void TestMethod1()
