@@ -5,7 +5,7 @@ using PasswordCrackerCentralized;
 namespace TestPasswordCrackerCentralized
 {
     [TestClass]
-    public class UnitTest
+    public class CrackerTest
     {
         [TestMethod]
         public void TestMethod1()
@@ -14,9 +14,7 @@ namespace TestPasswordCrackerCentralized
         [TestMethod]
         public void TestOfCrackersConstructor()
         {
-            Cracker c1 = new Cracker("testing_dictionary.txt","testing_passwords");
-
-            
+            Cracker c1 = new Cracker("testing_dictionary.txt","passwords.txt");
         }
     }
 }

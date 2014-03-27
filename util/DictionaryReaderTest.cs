@@ -10,7 +10,7 @@ namespace TestPasswordCrackerCentralized.util
     public class DictionaryReaderTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestOfConstructor()
         {
             BlockingCollection<string> dictionary = new BlockingCollection<string>();
             new DictionaryReader(dictionary, "testing_dictionary.txt");
