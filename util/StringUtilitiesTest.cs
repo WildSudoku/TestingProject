@@ -28,7 +28,16 @@ namespace TestPasswordCrackerCentralized.util
                 //Assert.AreEqual("no", e);
             }
         }
-        
+        [TestMethod]
+        public void TestOfSurroundWithDigits()
+        {
+            string word = "firstWord";
+            List<string> list = new List<string>();
+            StringUtilities.SurroundWithDigits(word,list,1);
+            Assert.AreEqual(100,list.Count);
+            Assert.AreEqual("0firstWord0",list.First());
+            Assert.AreEqual("9firstWord9", list.Last());
+        }
 
         [TestMethod]
            public void TestOfReverse()
